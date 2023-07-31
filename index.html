@@ -4,7 +4,53 @@
   <meta charset="utf-8">
   <title>カクレクマノミ君のブログ</title>
   <style>
-    /* CSS スタイルをここに書く */
+    /* ネストされた要素に対応する例 */
+.parent {
+  /* 親要素のスタイル */
+}
+
+.parent .child {
+  /* 子要素のスタイル */
+}
+
+.parent .child .grandchild {
+  /* 孫要素のスタイル */
+}
+
+/* ツリー構造に対応する例 */
+.tree ul {
+  list-style-type: none;
+}
+
+.tree ul li {
+  position: relative;
+}
+
+.tree ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+
+.tree ul li:last-child::before {
+  height: 50%;
+}
+
+.tree ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+}
   </style>
 </head>
 <body>
