@@ -4,52 +4,58 @@
   <meta charset="utf-8">
   <title>カクレクマノミ君のブログ</title>
   <style>
-    /* ネストされた要素に対応する例 */
-.parent {
-  /* 親要素のスタイル */
+    /* サイトのスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.parent .child {
-  /* 子要素のスタイル */
+/* ヘッダーのスタイル */
+header {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 20px;
 }
 
-.parent .child .grandchild {
-  /* 孫要素のスタイル */
+h1 {
+  color: #333;
 }
 
-/* ツリー構造に対応する例 */
-.tree ul {
-  list-style-type: none;
+h2 {
+  color: #777;
 }
 
-.tree ul li {
-  position: relative;
+/* メニューのスタイル */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
 
-.tree ul li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 1px;
-  height: 100%;
-  background-color: #000;
+/* メインコンテンツのスタイル */
+main {
+  padding: 20px;
 }
 
-.tree ul li:last-child::before {
-  height: 50%;
+article {
+  margin-bottom: 20px;
 }
 
-.tree ul li::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #000;
-  transform: translate(-50%, -50%);
+h2 {
+  color: #333;
+}
+
+p {
+  color: #777;
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 10px;
+  color: #777;
 }
   </style>
 </head>
