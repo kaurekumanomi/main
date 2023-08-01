@@ -136,12 +136,28 @@ ul li a:hover {
 
     <article>
       <div class="msr_box01">
-  <a href="#">
+  <a href="#" onclick="showPopup(event)">
     <img src="/stylerecipe_img/dummy_img01.png" width="210" height="140" alt="img"/>
     <h3 class="ttl">box</h3>
     <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
   </a>
 </div>
+
+<label class="open" for="pop-up">ポップアップを表示する</label>
+<input type="checkbox" id="pop-up">
+<div class="overlay">
+  <div class="window">
+    <label class="close" for="pop-up">×</label>
+    <p class="text">ポップアップの中身が入ります</p>
+  </div>
+</div>
+
+<script>
+  function showPopup(event) {
+    event.preventDefault();
+    document.getElementById("pop-up").checked = true;
+  }
+</script>
     </article>
     
     <article>
