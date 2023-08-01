@@ -136,13 +136,27 @@ ul li a:hover {
 
       <article>
   <div class="msr_box01">
-  <a href="#">
-    <img src="/stylerecipe_img/dummy_img01.png" width="210" height="140" alt="img"/>
-    <h3 class="ttl">box</h3>
-    <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-  </a>
-</div>  
-      </article>
+    <a href="#" onclick="showOverlay(event)">
+      <img src="/stylerecipe_img/dummy_img01.png" width="210" height="140" alt="img"/>
+      <h3 class="ttl">box</h3>
+      <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </a>
+  </div>
+</article>
+
+<div class="overlay" id="overlay">
+  <div class="overlay-content">
+    <h2>Overlay Content</h2>
+    <p>These are the contents of the overlay.</p>
+  </div>
+</div>
+
+<script>
+  function showOverlay(event) {
+    event.preventDefault();
+    document.getElementById("overlay").style.display = "block";
+  }
+</script>
     
     <article>
       <h2>今週のトピック</h2>
