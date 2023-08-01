@@ -4,120 +4,9 @@
   <meta charset="utf-8">
 　<link rel="icon" href="https://cdn.discordapp.com/attachments/1030352996485304360/1135844627220545566/71504954-1a14-46ca-bea4-be69da1d6ad8.jpg" type="https://cdn.discordapp.com/attachments/1030352996485304360/1135844627220545566/71504954-1a14-46ca-bea4-be69da1d6ad8.jpg">
   <link rel="stylesheet" href="./css/popup.css">
+  <link rel="stylesheet" href="./css/styles.css">
 　<meta name="description" content="カクレクマノミ君のホームページ+ブログです。あと色々置いてます。">
   <title>カクレクマノミ君のブログ</title>
-  <style>
-    /* サイトのスタイル */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* ヘッダーのスタイル */
-header {
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  color: #333;
-}
-
-h2 {
-  color: #777;
-}
-
-/* メニューのスタイル */
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-/* メインコンテンツのスタイル */
-main {
-  padding: 20px;
-}
-
-article {
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #333;
-}
-
-p {
-  color: #777;
-}
-
-/* フッターのスタイル */
-footer {
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 10px;
-  color: #777;
-}
-    /* スタイルの適用対象となるリスト */
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* メニューアイテムのスタイル */
-ul li {
-  margin-bottom: 10px;
-}
-
-/* メニューリンクのスタイル */
-ul li a {
-  text-decoration: none;
-  color: #333;
-  display: block;
-  padding: 5px;
-  background-color: #f3f3f3;
-  border-radius: 5px;
-}
-
-/* メニューリンクのホバースタイル */
-ul li a:hover {
-  background-color: #ccc;
-  color: #fff;
-}
-    .msr_box01 {
-  background-color: #1B73BA;
-  width: 230px;
-}
-.msr_box01 a{
-  background-color: #FFFFFF;
-  border: 1px solid #B9B9B9;
-  box-sizing: border-box;
-  color:#000000;
-  display:block;
-  padding: 8px;
-  transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
-}
-.msr_box01 img{
-  margin:0 0 5px;
-}
-.msr_box01 .ttl {
-  font-size: 16px;
-  line-height: 1.6;
-}
-.msr_box01 p {
-  font-size: 13px;
-  line-height: 1.6;
-}
-.msr_box01 a:hover{
-  opacity: 0.8;
-}
-  </style>
 </head>
 <body>
   <header>
@@ -138,31 +27,39 @@ ul li a:hover {
     </article>
 
       <article>
-  <div class="msr_box01">
-    <a href="#" onclick="showOverlay(event)">
+  <div class="msr_box01" id="msr_box">
+    <a href="#" onclick="showPopup()" title="クリック表示">
       <img src="https://cdn.discordapp.com/attachments/1030352996485304360/1135842601023586344/image_1.png" width="210" height="140" alt="img"/>
       <h3 class="ttl">サイト完成！！</h3>
       <p>とりあえずサイトが完成しま....</p>
-    </a>
-  </div>
-        <label class="open" for="pop-up">この記事を表示する</label>
-<input type="checkbox" id="pop-up">
-<div class="overlay">
-	<div class="window">
-		<label class="close" for="pop-up">閉じる</label>
-		<h4>サイト完成！！</h4>
-		<p>とりあえずサイトが完成しました！！やった＼(^_^)／</p>
-		<p>ブログは毎日更新はしないですけど、なんかあるたびに更新していきます！！</p>
-		<p>まぁ、これからお願いいたします！！</p>
-		<p></p>
-		<p>2023/08/01</p>
-	</div>
-</div>
+            </a>
+          </div>
+          <script src="js/test.js"></script>
 </article>
     
     <article>
       <h2>今週のトピック</h2>
       <!-- 他の記事の内容をここに追加する -->
+      <div class="wrap slide-paused" ontouchstart="">
+        <ul class="slideshow">
+          <li class="content content-hover" onclick="showPopup()">サイト完成</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+        </ul>
+        <ul class="slideshow">
+          <li class="content content-hover" onclick="showPopup()">サイト完成</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+        </ul>
+        <ul class="slideshow">
+          <li class="content content-hover" onclick="showPopup()">サイト完成</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+          <li class="content content-hover">404NoTFound</li>
+        </ul>
+      </div>
     </article>
   </main>
 
