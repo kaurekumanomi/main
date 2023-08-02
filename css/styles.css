@@ -108,6 +108,62 @@ ul li a:hover {
   opacity: 0.8;
 }
 
+/*msg_2*/
+
+.msr_box02 {
+  background-color: #1B73BA;
+  width: 230px;
+}
+
+.msr_box02 a{
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  box-sizing: border-box;
+  color:#000000;
+  display:block;
+  padding: 8px;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+.msr_box02 img{
+  margin:0 0 5px;
+}
+.msr_box02 .ttl {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.msr_box02 p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.msr_box02 a:hover{
+  opacity: 0.8;
+}
+
+/*boxタグ*/
+.boxes {
+  display: inline-block;      /* インラインブロック要素にする */  
+  padding:  20px;             /* 余白指定 */
+  height: 250px;              /* 高さ指定 */
+}
+
+/*new*/
+.new {
+	-webkit-animation: blink 1s ease infinite;
+	animation: blink 1s ease infinite;
+  color: red;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 /*スライド*/
 * {
   box-sizing: border-box;
@@ -130,13 +186,14 @@ h2 {
   height: 300px;
 }
 .content:nth-child(1) {
+  text-shadow: #000000;
   background-image: url("https://cdn.discordapp.com/attachments/1030352996485304360/1135842601023586344/image_1.png");
   border:  solid 1px; 
   background-size:  contain;
   background-repeat: no-repeat;
 }
 .content:nth-child(2) {
-  background-image: url("https://cdn.discordapp.com/attachments/1030352996485304360/1135935745186603131/404.png");
+  background-image: url("https://cdn.discordapp.com/attachments/1030352996485304360/1136213258311843850/kasi.png");
   border:  solid 1px; 
   background-size:  contain;
   background-repeat: no-repeat;
